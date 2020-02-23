@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Когда родился</title>
+    <script src="https://vk.com/js/api/openapi.js?167" type="text/javascript"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="login" onclick="login()"></div>
+    <div id="input" hidden>
+        <label>
+            Id
+            <input id="user" type="text">
+        </label>
+        <button onclick="search()">Search</button>
+    </div>
+    <div id="progress" hidden>
+        <progress id="progress_bar"></progress>
+    </div>
+    <script type="text/javascript">
+        VK.init({
+            apiId: clientId
+        })
+    </script>
+</body>
+</html>
